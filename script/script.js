@@ -26,6 +26,7 @@ class App {
 
     static showPage() {
         document.documentElement.classList.add('ready');
+
     }
 
     static makePageCurrent(url) {
@@ -65,6 +66,7 @@ class App {
                     $("#info").addClass("active");
                     $("#projects").attr("data-direction", "next");
                     $("#contacts").attr("data-direction", "next");
+                    // $(".info").addClass("parallax");
                 } else if (window.location.href.indexOf("projects") !== -1) {
                     $(".active").removeClass("active");
                     $("#projects").addClass("active");
@@ -88,10 +90,14 @@ class App {
                 }
             });
 
+            barba.hooks.beforeEnter((e) => {
+            });
+
             barba.hooks.after((e) => {
                 barba.wrapper.classList.remove('is-animating');
+                // $(".info").addClass("parallax");
                 // console.log("AFTER EVENT", e);
-
+                customScripts();
             });
 
             barba.init({
@@ -117,8 +123,32 @@ class App {
 
         App.showPage();
 
+
+
     }
 }
 
 App.start();
 
+
+function customScripts() {
+    jQuery.fn.fadeToggle = function (speed, easing, callback) {
+        return this.animate({ opacity: 'toggle' }, speed, easing, callback);
+    };
+    console.log("ready");
+
+
+
+    $("#skills-logo").click((e) => {
+        console.log("e:", e);
+        $("#skills-logo").fadeToggle("slow", () => {
+            $(".skills").fadeToggle("slow");
+        });
+    });
+    $(".skills").click((e) => {
+        console.log("e:", e);
+        $(".skills").fadeToggle("slow", () => {
+            $("#skills-logo").fadeToggle("slow");
+        });
+    });
+}

@@ -23,35 +23,58 @@
     <script src="https://unpkg.com/@barba/core"></script>
 
     <script type="module" src="script/script.js"></script>
+
 </head>
 
 <body data-barba="wrapper">
 
-<div data-barba="container" data-barba-namespace="info">
-    <div class="row pt-5 pb-5">
-        <div class="col text-center">
-            <h1>Denys Glukhovskyi Full Stack developer</h1>
-            <img class="selfie" src="images/selfie.jfif" alt="">
+    <div class="container-fluid info pb-5 pt-5 min-vh-100 parallax" data-barba="container" data-barba-namespace="info">
+
+        <div class="row">
+            <div class="col text-center">
+                <h1>Denys Glukhovskyi Full Stack developer</h1>
+                <img class="selfie" src="images/selfie.jfif" alt="">
+            </div>
         </div>
+        <div class="row">
+            <div class="col-12 text-center mb-3">
+                <h2>Skills</h2>
+            </div>
+            <div class="col-6 text-center">
+                <div class="col-12">
+                    <h2>Front End</h3>
+                </div>
+                <div id="skills-logo" class="pointer">
+                    <img src="images/frontend.png" alt="python programming language icon">
+                </div>
+                <div class="row skills pointer pt-5" style="display: none">
+                    <div class="col-6">
+                        <ul>
+                            <li>HTML</li>
+                            <li>CSS</li>
+                            <li>JavaScript</li>
+                        </ul>
+                    </div>
+                    <div class="col-6">
+                        <ul>
+                            <li>AngularJS/Angular</li>
+                            <li>Node</li>
+                            <li>Gulp</li>
+
+                        </ul>
+                    </div>
+                </div>
+            </div>
+            <div class="col-6 text-center">
+                <div>
+                    <h3>Backend</h3>
+                    <img src="images/backend.png" alt="c-sharp programming language icon">
+                </div>
+            </div>
+        </div>
+
+
     </div>
-    <div class="row">
-        <div class="col-12 text-center mb-3">
-            <h2>Skills</h2>
-        </div>
-        <div class="col-4 text-center">
-            <h3>Python</h3>
-            <img src="images/python.png" alt="python programming language icon">
-        </div>
-        <div class="col-4 text-center">
-            <h3>C#</h3>
-            <img src="images/c-sharp.png" alt="c-sharp programming language icon">
-        </div>
-        <div class="col-4 text-center">
-            <h3>MEAN</h3>
-            <img src="images/MEAN.png" alt="mean programming language icon">
-        </div>
-    </div>
-</div>
 
 </body>
 
