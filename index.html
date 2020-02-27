@@ -1,0 +1,96 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css"
+        integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
+    <link rel="stylesheet" href="styles/vendor.css">
+    <link rel="stylesheet" href="styles/style.css">
+
+    <title>Denys Gl</title>
+
+    <script src="https://code.jquery.com/jquery-3.4.1.min.js"
+        integrity="sha256-CSXorXvZcTkaix6Yvo6HppcZGetbYMGWSFlBw8HfCJo=" crossorigin="anonymous"></script>
+    <script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js"
+        integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo"
+        crossorigin="anonymous"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.min.js"
+        integrity="sha384-wfSDF2E50Y2D1uUdj0O3uMBJnjuUD4Ih7YwaYd1iqfktj0Uod8GCExl3Og8ifwB6"
+        crossorigin="anonymous"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/animejs/3.1.0/anime.min.js"></script>
+    <script src="https://unpkg.com/@barba/core"></script>
+
+    <script type="module" src="script/script.js"></script>
+</head>
+
+<body data-barba="wrapper">
+
+    <div id="main-menu" class="container-fluid min-100">
+        <div class="row min-vh-100">
+            <div class="col-12 menu-img menu-img-home">
+                <a class="nav-link d-flex justify-content-center align-items-center active" href="index.html"
+                    data-direction="next">
+                    <h2 class="text-white">Home</h2>
+                </a>
+            </div>
+
+            <div class="col-12 menu-img menu-img-info">
+                <a class="nav-link d-flex justify-content-center align-items-center" href="info.html"
+                    data-direction="next">
+                    <h2 class="text-white">Info</h2>
+                </a>
+            </div>
+
+            <div class="col-12 menu-img menu-img-projects">
+                <a class="nav-link d-flex justify-content-center align-items-center" href="projects.html"
+                data-direction="next">
+                    <h2 class="text-white">Projects</h2>
+                </a>
+            </div>
+
+            <div class="col-12 menu-img menu-img-contacts">
+                <a class="nav-link d-flex justify-content-center align-items-center" href="contacts.html"
+                    data-direction="next">
+                    <h2 class="text-white">Contacts</h2>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div id="small-menu" class="container-fluid" style="display: none;">
+        <div class="row">
+            <div class="col-3 menu-img menu-img-home">
+                <a id="home" class="nav-link d-flex justify-content-center align-items-center" href="index.html">
+                    <h2 class="text-white">Home</h2>
+                </a>
+            </div>
+            <div class="col-3 menu-img menu-img-info">
+                <a id="info" class="nav-link d-flex justify-content-center align-items-center" href="info.html"
+                    data-direction="prev">
+                    <h2 class="text-white">Info</h2>
+                </a>
+            </div>
+            <div class="col-3 menu-img menu-img-projects">
+                <a id="projects" class="nav-link d-flex justify-content-center align-items-center" href="projects.html"
+                    data-direction="next">
+                    <h2 class="text-white">Projects</h2>
+                </a>
+            </div>
+            <div class="col-3 menu-img menu-img-contacts">
+                <a id="contacts" class="nav-link d-flex justify-content-center align-items-center" href="contacts.html"
+                    data-direction="next">
+                    <h2 class="text-white">Contacts</h2>
+                </a>
+            </div>
+        </div>
+    </div>
+
+    <div class="container-fluid" data-barba="container" data-barba-namespace="index">
+
+    </div>
+
+</body>
+
+</html>

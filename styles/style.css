@@ -1,0 +1,121 @@
+html, body {
+  height: 100%;
+  background-color: black;
+}
+
+.min-100 {
+  min-height: 100%;
+}
+
+.min-50 {
+  min-height: 50%;
+}
+
+.selfie {
+  border-radius: 50%;
+}
+
+.header {
+  background-color: #E0E0E0;
+}
+
+.main-content {
+  background-color: #BCAAA4;
+}
+
+.contact-me {
+  background-color: #CFD8DC;
+}
+
+.btn-main {
+  background-color: #4DB6AC;
+  border-color: #4DB6AC;
+}
+
+.projects {
+  /* min-height: 600px; */
+}
+
+.parallax {
+  /* The image used */
+  background-image: url("../images/parallax1.jpg");
+  /* Set a specific height */
+  height: 800px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.parallax2 {
+  /* The image used */
+  background-image: url("../images/parallax2.png");
+  /* Set a specific height */
+  height: 400px;
+  /* Create the parallax scrolling effect */
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+
+.menu-img {
+  width: 600px;
+  background-size: cover;
+}
+
+#small-menu .menu-img {
+  width: 100%;
+  height: auto;
+}
+
+.menu-img a {
+  width: 100%;
+  height: 100%;
+}
+
+.menu-img-home {
+  background-image: url("../images/main.jpg");
+}
+
+.menu-img-info {
+  background-image: url("../images/info.webp");
+}
+
+.menu-img-projects {
+  background-image: url("../images/projects.jpeg");
+}
+
+.menu-img-contacts {
+  background-image: url("../images/contact.jpg");
+}
+
+#main-menu h2 {
+  font-weight: bold;
+  font-size: 3rem;
+}
+
+.active h2{
+  -webkit-animation: color-change 20s infinite;
+  -moz-animation: color-change 20s infinite;
+  -o-animation: color-change 20s infinite;
+  -ms-animation: color-change 20s infinite;
+  animation: color-change 20s infinite;
+  /* filter: blur(1px); */
+}
+
+@keyframes color-change {
+  0% { -webkit-text-stroke: 1px  #fb0094; }
+  10% { -webkit-text-stroke: 2px #0000ff; }
+  20% { -webkit-text-stroke: 3px #00ff00; }
+  30% { -webkit-text-stroke: 2px #ffff00; }
+  40% { -webkit-text-stroke: 1px #0000ff; }
+
+  50% { -webkit-text-stroke: 2px  #fb0094; }
+  60% { -webkit-text-stroke: 3px #0000ff; }
+  70% { -webkit-text-stroke: 2px #00ff00; }
+  80% { -webkit-text-stroke: 1px #ffff00; }
+  90% { -webkit-text-stroke: 2px #0000ff; }
+  100% { -webkit-text-stroke: 3px #ffffff; }
+} 
