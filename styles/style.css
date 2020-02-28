@@ -24,9 +24,21 @@ html, body {
 }
 
 .info {
-  background-color: #D1E8E2;
+  background: rgb(189, 195, 199);
+  background: -moz-linear-gradient(180deg, rgba(189, 195, 199, 1) 0%, rgba(44, 62, 80, 1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(189, 195, 199, 1) 0%, rgba(44, 62, 80, 1) 100%);
+  background: linear-gradient(180deg, rgba(189, 195, 199, 1) 0%, rgba(44, 62, 80, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bdc3c7", endColorstr="#2c3e50", GradientType=1);
   -webkit-text-stroke-width: 2px;
   -webkit-text-stroke-color: black;
+}
+
+.projects {
+  background: rgb(66, 39, 90);
+  background: -moz-linear-gradient(360deg, rgba(66, 39, 90, 1) 0%, rgba(115, 75, 109, 1) 100%);
+  background: -webkit-linear-gradient(360deg, rgba(66, 39, 90, 1) 0%, rgba(115, 75, 109, 1) 100%);
+  background: linear-gradient(360deg, rgba(66, 39, 90, 1) 0%, rgba(115, 75, 109, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#42275a", endColorstr="#734b6d", GradientType=1);
 }
 
 .info h2 {
@@ -39,7 +51,11 @@ html, body {
 }
 
 .contact-me {
-  background-color: #CFD8DC;
+  background: rgb(0, 4, 40);
+  background: -moz-linear-gradient(180deg, rgba(0, 4, 40, 1) 0%, rgba(0, 78, 146, 1) 100%);
+  background: -webkit-linear-gradient(180deg, rgba(0, 4, 40, 1) 0%, rgba(0, 78, 146, 1) 100%);
+  background: linear-gradient(180deg, rgba(0, 4, 40, 1) 0%, rgba(0, 78, 146, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000428", endColorstr="#004e92", GradientType=1);
 }
 
 .btn-main {
@@ -71,6 +87,13 @@ html, body {
   background-size: cover;
 }
 
+.frontend-skills, 
+.backend-skills {
+  font-weight: bold;
+  font-size: 1.6rem;
+
+}
+
 .menu-img {
   width: 600px;
   background-size: cover;
@@ -91,16 +114,27 @@ html, body {
 }
 
 .menu-img-info {
-  background-image: url("../images/info.webp");
-  background-position: left;
+  background: rgb(189, 195, 199);
+  background: -moz-linear-gradient(360deg, rgba(189, 195, 199, 1) 0%, rgba(44, 62, 80, 1) 100%);
+  background: -webkit-linear-gradient(360deg, rgba(189, 195, 199, 1) 0%, rgba(44, 62, 80, 1) 100%);
+  background: linear-gradient(360deg, rgba(189, 195, 199, 1) 0%, rgba(44, 62, 80, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#bdc3c7", endColorstr="#2c3e50", GradientType=1);
 }
 
 .menu-img-projects {
-  background-image: url("../images/projects.jpeg");
+  background: rgb(66, 39, 90);
+  background: -moz-linear-gradient(360deg, rgba(66, 39, 90, 1) 0%, rgba(115, 75, 109, 1) 100%);
+  background: -webkit-linear-gradient(360deg, rgba(66, 39, 90, 1) 0%, rgba(115, 75, 109, 1) 100%);
+  background: linear-gradient(360deg, rgba(66, 39, 90, 1) 0%, rgba(115, 75, 109, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#42275a", endColorstr="#734b6d", GradientType=1);
 }
 
 .menu-img-contacts {
-  background-image: url("../images/contact.jpg");
+  background: rgb(0, 4, 40);
+  background: -moz-linear-gradient(0deg, rgba(0, 4, 40, 1) 0%, rgba(0, 78, 146, 1) 100%);
+  background: -webkit-linear-gradient(0deg, rgba(0, 4, 40, 1) 0%, rgba(0, 78, 146, 1) 100%);
+  background: linear-gradient(0deg, rgba(0, 4, 40, 1) 0%, rgba(0, 78, 146, 1) 100%);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr="#000428", endColorstr="#004e92", GradientType=1);
 }
 
 #main-menu h2 {

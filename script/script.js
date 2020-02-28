@@ -139,16 +139,43 @@ function customScripts() {
 
 
 
-    $("#skills-logo").click((e) => {
+    $("#frontend-logo").click((e) => {
         console.log("e:", e);
-        $("#skills-logo").fadeToggle("slow", () => {
-            $(".skills").fadeToggle("slow");
+        $("#frontend-logo").fadeToggle("slow", () => {
+            $(".frontend-skills").fadeToggle("slow");
         });
     });
-    $(".skills").click((e) => {
+    $(".frontend-skills").click((e) => {
         console.log("e:", e);
-        $(".skills").fadeToggle("slow", () => {
-            $("#skills-logo").fadeToggle("slow");
+        $(".frontend-skills").fadeToggle("slow", () => {
+            $("#frontend-logo").fadeToggle("slow");
         });
     });
+
+    $("#backend-logo").click((e) => {
+        console.log("e:", e);
+        $("#backend-logo").fadeToggle("slow", () => {
+            $(".backend-skills").fadeToggle("slow");
+        });
+    });
+    $(".backend-skills").click((e) => {
+        console.log("e:", e);
+        $(".backend-skills").fadeToggle("slow", () => {
+            $("#backend-logo").fadeToggle("slow");
+        });
+    });
+
+    $(".chuck").hover((e)=> {
+        $(".chuck").toggle();
+    })
+
+    setInterval(function(){
+        $.get("https://api.chucknorris.io/jokes/random", function(res){
+            console.log("Chuck Joke: ", res.value);
+            $(".chuck").append(res.value);
+        })
+
+    }, 10000)
+
+
 }
